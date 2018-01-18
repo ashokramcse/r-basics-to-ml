@@ -19,7 +19,22 @@ as.numeric(typeCheck)
 # Matrix
 m<-matrix(nrow=2,ncol=3)
 m<-matrix(1:6, nrow=2,ncol=3)
+m<-matrix(1:6, nrow=2,ncol=3, byrow=TRUE)
 
 dim(m)<-c(1,1)
 
 m<-1:10
+
+rows<-3
+cols<-3
+x<-rep(NA, rows, cols)
+x1<-matrix(1:6, nrow=rows,ncol=cols)
+x
+x1
+
+# Binding and creating a matrix
+x<-1:3
+y<-10:20
+cbind(x,y)
+rbind(x,y)
+
